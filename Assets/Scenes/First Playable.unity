@@ -517,7 +517,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   winnerText: {fileID: 1540369815}
   resetText: {fileID: 476969464}
-  areaPercentage: 0.1
+  areaPercentage: 0.5
   zoneCount: 0
 --- !u!4 &949192025
 Transform:
