@@ -10,11 +10,15 @@ public class NodeScript : MonoBehaviour {
 
     public Color p1Color, p2Color, p3Color;
 
+    private IEnumerator grow;
+
 	// Use this for initialization
 	void Start () {
         zone = transform.GetChild(0).gameObject;
         zoneCol = zone.GetComponent<SphereCollider>();
-        StartCoroutine(Grow());
+
+        grow = Grow();
+        StartCoroutine(grow);
 	}
 	
 	// Update is called once per frame
@@ -31,4 +35,18 @@ public class NodeScript : MonoBehaviour {
             yield return new WaitForSeconds(0.1f);
             }
         }
-}
+
+    public void StopGrowing()
+        {
+        StopCoroutine(grow);
+        }
+
+    private void OnTriggerStay(Collider other)
+        {
+        if (other.gameObject != zone && other.gameObject.name == "Zone")
+            {
+            Debug.Log("In Zone");
+            Destroy(gameObject);
+            }
+        }
+    }

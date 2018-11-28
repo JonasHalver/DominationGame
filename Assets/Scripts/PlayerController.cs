@@ -10,7 +10,10 @@ public class PlayerController : MonoBehaviour {
 
     public GameObject node;
 
-    public float movementSpeed = 1f;
+    public float movementSpeed = 8f;
+    public float zoneSpeed = 12f;
+
+    private List<Collider> zones = new List<Collider>();
 
 	// Use this for initialization
 	void Start () {
@@ -41,7 +44,21 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.Translate(new Vector3(Input.GetAxis(horizontal), 0, Input.GetAxis(vertical)) * movementSpeed * Time.deltaTime);
+        float speed;
+        int count;
+
+        count = zones.Count;
+
+        if (count != 0)
+            {
+            speed = zoneSpeed;
+            }
+        else
+            {
+            speed = movementSpeed;
+            }
+
+        transform.Translate(new Vector3(Input.GetAxis(horizontal), 0, Input.GetAxis(vertical)) * speed * Time.deltaTime);
 
         if (Input.GetButtonDown(fire))
             {
@@ -50,4 +67,20 @@ public class PlayerController : MonoBehaviour {
             nodeCurrent.GetComponent<NodeScript>().owner = gameObject.name; 
             }
 	}
-}
+
+    private void OnTriggerEnter(Collider other)
+        {
+        if (other.gameObject.name == "Zone" && other.transform.parent.GetComponent<NodeScript>().owner == gameObject.name)
+            {
+            zones.Add(other);
+            }
+        }
+
+    private void OnTriggerExit(Collider other)
+        {
+        if (zones.Contains(other))
+            {
+            zones.Remove(other);
+            }
+        }
+    }
