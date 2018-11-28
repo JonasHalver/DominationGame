@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MatchManager : MonoBehaviour {
 
@@ -8,20 +9,38 @@ public class MatchManager : MonoBehaviour {
 
     public IEnumerator coroutine;
 
-    public float totalArea = 0;
-    public float areaThreshold = 1000f;
+    private GameObject arena;
+    public UnityEngine.UI.Text winnerText;
+    public GameObject resetText;
+
+    private float coveredArea = 0;
+    private float arenaArea;
+    public float areaPercentage = 1f;
+    private float areaThreshold;
 
     public int zoneCount;
+    private int sceneIndex;
 
 	// Use this for initialization
 	void Start () {
+        Time.timeScale = 1;
+        sceneIndex = SceneManager.GetActiveScene().buildIndex;
         coroutine = AreaChecker();
         StartCoroutine(coroutine);
+
+        arena = GameObject.Find("Arena");
+        arenaArea = Mathf.Pow((arena.transform.localScale.x * 10), 2);
+        areaThreshold = arenaArea * areaPercentage;
 	}
 	
 	// Update is called once per frame
 	void Update () {
         zoneCount = zones.Count;
+
+        if (Input.GetKeyDown("r"))
+            {
+            SceneManager.LoadScene(sceneIndex);
+            }
 	}
 
     IEnumerator AreaChecker()
@@ -30,20 +49,68 @@ public class MatchManager : MonoBehaviour {
             {
             for (int i = 0; i < zones.Count; i++)
                 {
-                totalArea = totalArea + zones[i].GetComponent<ZoneScript>().area;
+                if (zones[i] != null)
+                    {
+                    coveredArea = coveredArea + zones[i].GetComponent<ZoneScript>().area;
+                    }
                 }
             yield return new WaitForEndOfFrame();
-            if (totalArea > areaThreshold)
+            if (coveredArea > areaThreshold)
                 {
-
+                winnerText.text = Winner();
                 }
             else
                 {
-                Debug.Log("No winner, " + totalArea + "/" + areaThreshold);
-                totalArea = 0;
+                Debug.Log("No winner, " + coveredArea + "/" + areaThreshold);
+                coveredArea = 0;
                 }
 
             yield return new WaitForSeconds(1f);
             }
+        }
+
+    public string Winner()
+        {
+        float p1score = 0, p2score = 0, p3score = 0;
+        //for (int i = 0; i < zones.Count; i++)
+        foreach (GameObject zone in zones)
+            {
+            if (zone != null)
+                {
+                string zoneOwner = zone.transform.parent.GetComponent<NodeScript>().owner;
+                switch (zoneOwner)
+                    {
+                    case "Player1":
+                        p1score = p1score + zone.GetComponent<ZoneScript>().area;
+                        break;
+                    case "Player2":
+                        p2score = p2score + zone.GetComponent<ZoneScript>().area;
+                        break;
+                    case "Player3":
+                        p3score = p3score + zone.GetComponent<ZoneScript>().area;
+                        break;
+                    }
+                }
+            }
+        Time.timeScale = 0.5f;
+        resetText.SetActive(true);
+
+        if (p1score > p2score && p1score > p2score)
+            {
+            return "Player 1 Wins!";
+            }
+        else if (p2score > p1score && p2score > p3score)
+            {
+            return "Player 2 Wins!";
+            }
+        else if (p3score > p1score && p3score > p2score)
+            {
+            return "Player 3 Wins!";
+            }
+        else
+            {
+            return "No Winner";
+            }
+
         }
 }

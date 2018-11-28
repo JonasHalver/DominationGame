@@ -8,6 +8,9 @@ public class PlayerController : MonoBehaviour {
     public enum Player { Player1, Player2, Player3 };
     public Player currentPlayer = Player.Player1;
 
+    public Material p1Mat, p2Mat, p3Mat;
+    private Material thisMat;
+
     public GameObject node;
 
     public float movementSpeed = 8f;
@@ -24,6 +27,7 @@ public class PlayerController : MonoBehaviour {
                 horizontal = "Player1Horizontal";
                 vertical = "Player1Vertical";
                 fire = "Player1Fire";
+                thisMat = p1Mat;
                 break;
 
             case Player.Player2:
@@ -31,6 +35,7 @@ public class PlayerController : MonoBehaviour {
                 horizontal = "Player2Horizontal";
                 vertical = "Player2Vertical";
                 fire = "Player2Fire";
+                thisMat = p2Mat;
                 break;
 
             case Player.Player3:
@@ -38,6 +43,7 @@ public class PlayerController : MonoBehaviour {
                 horizontal = "Player3Horizontal";
                 vertical = "Player3Vertical";
                 fire = "Player3Fire";
+                thisMat = p3Mat;
                 break;
             }
 	}
@@ -64,7 +70,9 @@ public class PlayerController : MonoBehaviour {
             {
             GameObject nodeCurrent;
             nodeCurrent = Instantiate(node, new Vector3(transform.position.x, 0, transform.position.z), transform.rotation);
-            nodeCurrent.GetComponent<NodeScript>().owner = gameObject.name; 
+            nodeCurrent.GetComponent<NodeScript>().owner = gameObject.name;
+            nodeCurrent.GetComponent<Renderer>().material = thisMat;
+            nodeCurrent.transform.GetChild(0).GetComponent<Renderer>().material = thisMat;
             }
 	}
 
