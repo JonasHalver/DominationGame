@@ -256,6 +256,49 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
+--- !u!1 &949192023
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 949192025}
+  - component: {fileID: 949192024}
+  m_Layer: 0
+  m_Name: MatchManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &949192024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 949192023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30cb8c381148cf848b8cde809b319140, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalArea: 0
+  areaThreshold: 1000
+  zoneCount: 0
+--- !u!4 &949192025
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 949192023}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.5782604, y: 0.07632637, z: 1.3737395}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1305490237
 GameObject:
   m_ObjectHideFlags: 0
@@ -337,7 +380,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1305490237}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.7317247, y: 0.49, z: -0.75549006}
+  m_LocalPosition: {x: 0, y: 0.49, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -372,6 +415,7 @@ MonoBehaviour:
   currentPlayer: 0
   node: {fileID: 1753564287911790, guid: 88fadcd38d247e14483bb52752d636b2, type: 2}
   movementSpeed: 8
+  zoneSpeed: 12
 --- !u!1 &1661355970
 GameObject:
   m_ObjectHideFlags: 0
@@ -505,9 +549,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b94ca3b2f6b5de41befd63d0892579f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentPlayer: 0
+  currentPlayer: 1
   node: {fileID: 1753564287911790, guid: 88fadcd38d247e14483bb52752d636b2, type: 2}
   movementSpeed: 8
+  zoneSpeed: 12
 --- !u!65 &1734083160
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -621,9 +666,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b94ca3b2f6b5de41befd63d0892579f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentPlayer: 0
+  currentPlayer: 2
   node: {fileID: 1753564287911790, guid: 88fadcd38d247e14483bb52752d636b2, type: 2}
   movementSpeed: 8
+  zoneSpeed: 12
 --- !u!65 &2055187795
 BoxCollider:
   m_ObjectHideFlags: 0
