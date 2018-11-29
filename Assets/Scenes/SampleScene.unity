@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465934, g: 0.49642956, b: 0.5748249, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -225,7 +225,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 7
   orthographic: 1
   orthographic size: 15.65
   m_Depth: -1
@@ -283,8 +283,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30cb8c381148cf848b8cde809b319140, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalArea: 0
-  areaThreshold: 1000
+  winnerText: {fileID: 0}
+  resetText: {fileID: 0}
+  areaPercentage: 1
   zoneCount: 0
 --- !u!4 &949192025
 Transform:
@@ -413,6 +414,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentPlayer: 0
+  p1Mat: {fileID: 0}
+  p2Mat: {fileID: 0}
+  p3Mat: {fileID: 0}
   node: {fileID: 1753564287911790, guid: 88fadcd38d247e14483bb52752d636b2, type: 2}
   movementSpeed: 8
   zoneSpeed: 12
@@ -550,6 +554,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentPlayer: 1
+  p1Mat: {fileID: 0}
+  p2Mat: {fileID: 0}
+  p3Mat: {fileID: 0}
   node: {fileID: 1753564287911790, guid: 88fadcd38d247e14483bb52752d636b2, type: 2}
   movementSpeed: 8
   zoneSpeed: 12
@@ -667,6 +674,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentPlayer: 2
+  p1Mat: {fileID: 0}
+  p2Mat: {fileID: 0}
+  p3Mat: {fileID: 0}
   node: {fileID: 1753564287911790, guid: 88fadcd38d247e14483bb52752d636b2, type: 2}
   movementSpeed: 8
   zoneSpeed: 12
