@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9a086ec9fa6664c1f802098e48371d6f
+guid: b55997ea968c54ddebb858589866a7a0
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -12,32 +12,33 @@ ModelImporter:
     100012: arm3.r.001
     100014: arm3.r.001_end
     100016: Armature
-    100018: Bone
-    100020: Bone.001
-    100022: Bone.002
-    100024: Bone.003
-    100026: Bone.003_end
-    100028: Bone.010
-    100030: Bone.010_end
-    100032: Bone.011
-    100034: Bone.011_end
-    100036: EYES
-    100038: HjelmCollider
-    100040: Krop
-    100042: leg.l
-    100044: leg.l.pole
-    100046: leg.l.pole_end
-    100048: leg.r.001
-    100050: leg.r.pole
-    100052: leg.r.pole_end
-    100054: leg2.l
-    100056: leg2.l.target
-    100058: leg2.l.target_end
-    100060: leg2.r.001
-    100062: leg2.R.target
-    100064: leg2.R.target_end
-    100066: Skive
-    100068: //RootNode
+    100018: //RootNode
+    100020: Bone
+    100022: Bone.001
+    100024: Bone.002
+    100026: Bone.003
+    100028: Bone.003_end
+    100030: Bone.010
+    100032: Bone.010_end
+    100034: Bone.011
+    100036: Bone.011_end
+    100038: EYES
+    100040: HjelmCollider
+    100042: Krop
+    100044: leg.l
+    100046: leg.l.pole
+    100048: leg.l.pole_end
+    100050: leg.r.001
+    100052: leg.r.pole
+    100054: leg.r.pole_end
+    100056: leg2.l
+    100058: leg2.l.target
+    100060: leg2.l.target_end
+    100062: leg2.r.001
+    100064: leg2.R.target
+    100066: leg2.R.target_end
+    100068: Skive
+    100070: eye
     400000: Arm.l
     400002: Arm.r.001
     400004: Arm2.l
@@ -47,32 +48,33 @@ ModelImporter:
     400012: arm3.r.001
     400014: arm3.r.001_end
     400016: Armature
-    400018: Bone
-    400020: Bone.001
-    400022: Bone.002
-    400024: Bone.003
-    400026: Bone.003_end
-    400028: Bone.010
-    400030: Bone.010_end
-    400032: Bone.011
-    400034: Bone.011_end
-    400036: EYES
-    400038: HjelmCollider
-    400040: Krop
-    400042: leg.l
-    400044: leg.l.pole
-    400046: leg.l.pole_end
-    400048: leg.r.001
-    400050: leg.r.pole
-    400052: leg.r.pole_end
-    400054: leg2.l
-    400056: leg2.l.target
-    400058: leg2.l.target_end
-    400060: leg2.r.001
-    400062: leg2.R.target
-    400064: leg2.R.target_end
-    400066: Skive
-    400068: //RootNode
+    400018: //RootNode
+    400020: Bone
+    400022: Bone.001
+    400024: Bone.002
+    400026: Bone.003
+    400028: Bone.003_end
+    400030: Bone.010
+    400032: Bone.010_end
+    400034: Bone.011
+    400036: Bone.011_end
+    400038: EYES
+    400040: HjelmCollider
+    400042: Krop
+    400044: leg.l
+    400046: leg.l.pole
+    400048: leg.l.pole_end
+    400050: leg.r.001
+    400052: leg.r.pole
+    400054: leg.r.pole_end
+    400056: leg2.l
+    400058: leg2.l.target
+    400060: leg2.l.target_end
+    400062: leg2.r.001
+    400064: leg2.R.target
+    400066: leg2.R.target_end
+    400068: Skive
+    400070: eye
     2100000: Metal Body
     2100002: GlassHead
     2100004: Krave.006
@@ -82,49 +84,22 @@ ModelImporter:
     2300000: EYES
     2300002: HjelmCollider
     2300004: Skive
+    2300006: eye
     3300000: EYES
     3300002: HjelmCollider
     3300004: Skive
+    3300006: eye
     4300000: Krop
     4300002: Skive
     4300004: EYES
     4300006: HjelmCollider
+    4300008: eye
     7400000: Armature|Idle
     7400002: Armature|T pose
     7400004: Armature|Walk
     9500000: //RootNode
     13700000: Krop
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: GlassHead
-    second: {fileID: 2100000, guid: 16fc160dcab4d498da4277525522633a, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: GlassHead.005
-    second: {fileID: 2100000, guid: f62ea09ecf8de426a9336215358884b6, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Krave.006
-    second: {fileID: 2100000, guid: 7f9278d0435da40c188226bceef57cbc, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Metal Body
-    second: {fileID: 2100000, guid: fbe760e231266427786504d847fa1f1d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: No Name
-    second: {fileID: 2100000, guid: b1df12edba063483f92bace0a41f8939, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: eyes
-    second: {fileID: 2100000, guid: 326b7d50db01f428284eca9d0391749c, type: 2}
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
