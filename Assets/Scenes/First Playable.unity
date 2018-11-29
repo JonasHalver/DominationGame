@@ -645,11 +645,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b94ca3b2f6b5de41befd63d0892579f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentPlayer: 0
+  usePhysics: 1
+  currentPlayer: 1
   p1Mat: {fileID: 2100000, guid: d51e49dcf8aca6148999bcee80165941, type: 2}
   p2Mat: {fileID: 2100000, guid: 90c30e557f4182e4199ddc1d42061140, type: 2}
   p3Mat: {fileID: 2100000, guid: f80f438ce91b33249aa3e4769f5b34f1, type: 2}
   node: {fileID: 1753564287911790, guid: 88fadcd38d247e14483bb52752d636b2, type: 2}
+  speed: 0
   movementSpeed: 8
   zoneSpeed: 12
 --- !u!1 &1540369814
@@ -860,11 +862,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b94ca3b2f6b5de41befd63d0892579f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  usePhysics: 0
   currentPlayer: 1
   p1Mat: {fileID: 2100000, guid: d51e49dcf8aca6148999bcee80165941, type: 2}
   p2Mat: {fileID: 2100000, guid: 90c30e557f4182e4199ddc1d42061140, type: 2}
   p3Mat: {fileID: 2100000, guid: f80f438ce91b33249aa3e4769f5b34f1, type: 2}
   node: {fileID: 1753564287911790, guid: 88fadcd38d247e14483bb52752d636b2, type: 2}
+  speed: 0
   movementSpeed: 8
   zoneSpeed: 12
 --- !u!65 &1734083160
@@ -980,11 +984,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b94ca3b2f6b5de41befd63d0892579f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  usePhysics: 0
   currentPlayer: 2
   p1Mat: {fileID: 2100000, guid: d51e49dcf8aca6148999bcee80165941, type: 2}
   p2Mat: {fileID: 2100000, guid: 90c30e557f4182e4199ddc1d42061140, type: 2}
   p3Mat: {fileID: 2100000, guid: f80f438ce91b33249aa3e4769f5b34f1, type: 2}
   node: {fileID: 1753564287911790, guid: 88fadcd38d247e14483bb52752d636b2, type: 2}
+  speed: 0
   movementSpeed: 8
   zoneSpeed: 12
 --- !u!65 &2055187795

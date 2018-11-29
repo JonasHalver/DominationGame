@@ -12,6 +12,11 @@ public class MatchManager : MonoBehaviour {
     private GameObject arena;
     public UnityEngine.UI.Text winnerText;
     public GameObject resetText;
+    public UnityEngine.UI.Text p1ScoreText;
+    public UnityEngine.UI.Text p2ScoreText;
+    public UnityEngine.UI.Text pScoreText;
+
+    float p1score = 0, p2score = 0, p3score = 0;
 
     private float coveredArea = 0;
     private float arenaArea;
@@ -69,10 +74,8 @@ public class MatchManager : MonoBehaviour {
             }
         }
 
-    public string Winner()
+    public void Score()
         {
-        float p1score = 0, p2score = 0, p3score = 0;
-        //for (int i = 0; i < zones.Count; i++)
         foreach (GameObject zone in zones)
             {
             if (zone != null)
@@ -92,6 +95,31 @@ public class MatchManager : MonoBehaviour {
                     }
                 }
             }
+        //p1ScoreText.text = (p1score /  ToString + " %"
+        }
+
+    public string Winner()
+        {
+        //for (int i = 0; i < zones.Count; i++)
+        //foreach (GameObject zone in zones)
+        //    {
+        //    if (zone != null)
+        //        {
+        //        string zoneOwner = zone.transform.parent.GetComponent<NodeScript>().owner;
+        //        switch (zoneOwner)
+        //            {
+        //            case "Player1":
+        //                p1score = p1score + zone.GetComponent<ZoneScript>().area;
+        //                break;
+        //            case "Player2":
+        //                p2score = p2score + zone.GetComponent<ZoneScript>().area;
+        //                break;
+        //            case "Player3":
+        //                p3score = p3score + zone.GetComponent<ZoneScript>().area;
+        //                break;
+        //            }
+        //        }
+        //    }
         Time.timeScale = 0.5f;
         resetText.SetActive(true);
 
