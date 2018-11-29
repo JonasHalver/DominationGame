@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
+    public bool usePhysics;
+    private Rigidbody rb;
+
+    private Animator anim; 
+
     private string horizontal, vertical, fire;
     public enum Player { Player1, Player2, Player3 };
     public Player currentPlayer = Player.Player1;
@@ -13,6 +18,7 @@ public class PlayerController : MonoBehaviour {
 
     public GameObject node;
 
+    public float speed;
     public float movementSpeed = 8f;
     public float zoneSpeed = 12f;
 
@@ -20,6 +26,9 @@ public class PlayerController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        rb = GetComponent<Rigidbody>();
+        anim = GetComponent<Animator>();
+
         switch (currentPlayer)
             {
             case Player.Player1:
@@ -50,7 +59,7 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        float speed;
+        
         int count;
 
         count = zones.Count;
@@ -64,7 +73,10 @@ public class PlayerController : MonoBehaviour {
             speed = movementSpeed;
             }
 
-        transform.Translate(new Vector3(Input.GetAxis(horizontal), 0, Input.GetAxis(vertical)) * speed * Time.deltaTime);
+        if (!usePhysics)
+            {
+            transform.Translate(new Vector3(Input.GetAxis(horizontal), 0, Input.GetAxis(vertical)) * speed * Time.deltaTime);
+            }
 
         if (Input.GetButtonDown(fire))
             {
@@ -75,6 +87,25 @@ public class PlayerController : MonoBehaviour {
             nodeCurrent.transform.GetChild(0).GetComponent<Renderer>().material = thisMat;
             }
 	}
+
+    private void LateUpdate()
+        {
+        if (usePhysics)
+            {
+            Vector3 empty = new Vector3(0, 0, 0);
+            Vector3 movement = new Vector3(Input.GetAxis(horizontal), 0, Input.GetAxis(vertical));
+            rb.velocity = movement * speed;
+            if (movement != empty)
+                {
+                transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 0.5f);
+                anim.SetBool("isMoving", true);
+                }
+            else
+                {
+                anim.SetBool("isMoving", false);
+                }
+            }
+        }
 
     private void OnTriggerEnter(Collider other)
         {

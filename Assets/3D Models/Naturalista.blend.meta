@@ -14,6 +14,24 @@ ModelImporter:
     100016: Sten3
     100018: Sten4
     100020: Sten5
+    100022: Arm2_l
+    100024: Arm2_r_001
+    100026: arm3_l
+    100028: arm3_r_001
+    100030: Arm_l
+    100032: Arm_r_001
+    100034: Armature
+    100036: Bone
+    100038: Bone_001
+    100040: Bone_002
+    100042: Bone_003
+    100044: Bone_010
+    100046: Bone_011
+    100048: Krop
+    100050: leg2_l
+    100052: leg2_r_001
+    100054: leg_l
+    100056: leg_r_001
     400000: Cube_003
     400002: EYES
     400004: Hjelm
@@ -25,6 +43,24 @@ ModelImporter:
     400016: Sten3
     400018: Sten4
     400020: Sten5
+    400022: Arm2_l
+    400024: Arm2_r_001
+    400026: arm3_l
+    400028: arm3_r_001
+    400030: Arm_l
+    400032: Arm_r_001
+    400034: Armature
+    400036: Bone
+    400038: Bone_001
+    400040: Bone_002
+    400042: Bone_003
+    400044: Bone_010
+    400046: Bone_011
+    400048: Krop
+    400050: leg2_l
+    400052: leg2_r_001
+    400054: leg_l
+    400056: leg_r_001
     2100000: unnamed
     2100002: sten
     2100004: eyes
@@ -32,6 +68,7 @@ ModelImporter:
     2100008: Krave
     2100010: GlassHead_005
     2100012: Krave_006
+    2100014: Metal_Body
     2300000: Cube_003
     2300002: EYES
     2300004: Hjelm
@@ -62,8 +99,14 @@ ModelImporter:
     4300014: Sten4
     4300016: Hjelm
     4300018: HjelmCollider
+    4300020: Krop
     7400000: Default Take
+    7400002: Idle
+    7400004: T_pose
+    7400006: Walk
     9500000: //RootNode
+    13700000: Krop
+    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1

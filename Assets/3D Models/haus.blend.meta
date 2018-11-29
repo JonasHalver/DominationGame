@@ -1,36 +1,56 @@
 fileFormatVersion: 2
-guid: ee5dc15cdf8fc4862a937c083bd95612
+guid: 62081d2d8a1e54f359fa3d2aaacde02c
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Sten1
-    100004: Sten2
-    100006: Sten3
-    100008: Sten4
-    100010: Sten5
-    400000: //RootNode
-    400002: Sten1
-    400004: Sten2
-    400006: Sten3
-    400008: Sten4
-    400010: Sten5
-    2100000: sten
-    2300000: Sten1
-    2300002: Sten2
-    2300004: Sten3
-    2300006: Sten4
-    2300008: Sten5
-    3300000: Sten1
-    3300002: Sten2
-    3300004: Sten3
-    3300006: Sten4
-    3300008: Sten5
-    4300000: Sten1
-    4300002: Sten2
-    4300004: Sten3
-    4300006: Sten4
-    4300008: Sten5
+    100000: Cube
+    100002: Cube_001
+    100004: Cube_002
+    100006: Cube_003
+    100008: Cube_004
+    100010: Cube_005
+    100012: Cube_006
+    100014: Cube_007
+    100016: //RootNode
+    100018: Sphere
+    400000: Cube
+    400002: Cube_001
+    400004: Cube_002
+    400006: Cube_003
+    400008: Cube_004
+    400010: Cube_005
+    400012: Cube_006
+    400014: Cube_007
+    400016: //RootNode
+    400018: Sphere
+    2100000: unnamed
+    2300000: Cube
+    2300002: Cube_001
+    2300004: Cube_002
+    2300006: Cube_003
+    2300008: Cube_004
+    2300010: Cube_005
+    2300012: Cube_006
+    2300014: Cube_007
+    2300016: Sphere
+    3300000: Cube
+    3300002: Cube_001
+    3300004: Cube_002
+    3300006: Cube_003
+    3300008: Cube_004
+    3300010: Cube_005
+    3300012: Cube_006
+    3300014: Cube_007
+    3300016: Sphere
+    4300000: Sphere
+    4300002: Cube_002
+    4300004: Cube_001
+    4300006: Cube
+    4300008: Cube_005
+    4300010: Cube_004
+    4300012: Cube_003
+    4300014: Cube_006
+    4300016: Cube_007
     7400000: Default Take
     9500000: //RootNode
     2186277476908879412: ImportLogs
