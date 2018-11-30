@@ -17,6 +17,8 @@ public class PlayerController : MonoBehaviour {
     private Material thisMat;
 
     public GameObject node;
+    public float cooldown = 1f;
+    private bool isReady;
 
     public float speed;
     public float movementSpeed = 8f;
@@ -78,13 +80,17 @@ public class PlayerController : MonoBehaviour {
             transform.Translate(new Vector3(Input.GetAxis(horizontal), 0, Input.GetAxis(vertical)) * speed * Time.deltaTime);
             }
 
-        if (Input.GetButtonDown(fire))
+        if (isReady)
             {
-            GameObject nodeCurrent;
-            nodeCurrent = Instantiate(node, new Vector3(transform.position.x, 0, transform.position.z), transform.rotation);
-            nodeCurrent.GetComponent<NodeScript>().owner = gameObject.name;
-            nodeCurrent.GetComponent<Renderer>().material = thisMat;
-            nodeCurrent.transform.GetChild(0).GetComponent<Renderer>().material = thisMat;
+            if (Input.GetButtonDown(fire))
+                {
+                GameObject nodeCurrent;
+                nodeCurrent = Instantiate(node, new Vector3(transform.position.x, 0, transform.position.z), transform.rotation);
+                nodeCurrent.GetComponent<NodeScript>().owner = gameObject.name;
+                nodeCurrent.GetComponent<Renderer>().material = thisMat;
+                nodeCurrent.transform.GetChild(0).GetComponent<Renderer>().material = thisMat;
+                StartCoroutine(Cooldown());
+                }
             }
 	}
 
@@ -121,5 +127,12 @@ public class PlayerController : MonoBehaviour {
             {
             zones.Remove(other);
             }
+        }
+
+    IEnumerator Cooldown()
+        {
+        isReady = false;
+        yield return new WaitForSeconds(cooldown);
+        isReady = true;
         }
     }
