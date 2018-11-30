@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour {
 
     public GameObject node;
     public float cooldown = 1f;
-    private bool isReady;
+    private bool isReady = true;
 
     public float speed;
     public float movementSpeed = 8f;

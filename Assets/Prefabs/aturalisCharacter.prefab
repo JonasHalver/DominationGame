@@ -1037,8 +1037,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1356160254255894}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.7, y: 1.7, z: 1.7}
+  m_LocalPosition: {x: 9.57, y: 9.907174e-17, z: 6.97}
+  m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
   m_Children:
   - {fileID: 4540453837480930}
   - {fileID: 4764203078702022}
@@ -1328,7 +1328,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!64 &64390090814895888
 MeshCollider:
@@ -1437,7 +1437,7 @@ Animator:
   m_GameObject: {fileID: 1356160254255894}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: b55997ea968c54ddebb858589866a7a0, type: 3}
-  m_Controller: {fileID: 9100000, guid: 47b761a33745340c2abe17d79e4d4c23, type: 2}
+  m_Controller: {fileID: 9100000, guid: d95c344bc55c24cffa27ced8f07d4707, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1459,10 +1459,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   usePhysics: 1
   currentPlayer: 1
-  p1Mat: {fileID: 0}
-  p2Mat: {fileID: 0}
-  p3Mat: {fileID: 0}
-  node: {fileID: 0}
+  p1Mat: {fileID: 2100000, guid: d51e49dcf8aca6148999bcee80165941, type: 2}
+  p2Mat: {fileID: 2100000, guid: 90c30e557f4182e4199ddc1d42061140, type: 2}
+  p3Mat: {fileID: 2100000, guid: f80f438ce91b33249aa3e4769f5b34f1, type: 2}
+  node: {fileID: 1753564287911790, guid: 88fadcd38d247e14483bb52752d636b2, type: 2}
+  cooldown: 1
   speed: 0
   movementSpeed: 8
   zoneSpeed: 12
