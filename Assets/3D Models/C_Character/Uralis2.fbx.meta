@@ -1,59 +1,24 @@
 fileFormatVersion: 2
-guid: 62081d2d8a1e54f359fa3d2aaacde02c
+guid: b75d7250326b94ac4958a99dfa44c5fb
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Cube
-    100002: Cube_001
-    100004: Cube_002
-    100006: Cube_003
-    100008: Cube_004
-    100010: Cube_005
-    100012: Cube_006
-    100014: Cube_007
-    100016: //RootNode
-    100018: Sphere
-    400000: Cube
-    400002: Cube_001
-    400004: Cube_002
-    400006: Cube_003
-    400008: Cube_004
-    400010: Cube_005
-    400012: Cube_006
-    400014: Cube_007
-    400016: //RootNode
-    400018: Sphere
-    2100000: unnamed
-    2300000: Cube
-    2300002: Cube_001
-    2300004: Cube_002
-    2300006: Cube_003
-    2300008: Cube_004
-    2300010: Cube_005
-    2300012: Cube_006
-    2300014: Cube_007
-    2300016: Sphere
-    3300000: Cube
-    3300002: Cube_001
-    3300004: Cube_002
-    3300006: Cube_003
-    3300008: Cube_004
-    3300010: Cube_005
-    3300012: Cube_006
-    3300014: Cube_007
-    3300016: Sphere
-    4300000: Sphere
-    4300002: Cube_002
-    4300004: Cube_001
-    4300006: Cube
-    4300008: Cube_005
-    4300010: Cube_004
-    4300012: Cube_003
-    4300014: Cube_006
-    4300016: Cube_007
-    7400000: Default Take
-    9500000: //RootNode
-    2186277476908879412: ImportLogs
+    100000: //RootNode
+    100002: EYES
+    100004: Krop
+    400000: //RootNode
+    400002: EYES
+    400004: Krop
+    2100000: Metal Body
+    2100002: GlassHead
+    2100004: Krave.006
+    2100006: eyes
+    2300000: EYES
+    2300002: Krop
+    3300000: EYES
+    3300002: Krop
+    4300000: Krop
+    4300002: EYES
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -106,7 +71,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -130,7 +95,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

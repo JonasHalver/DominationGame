@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ee5dc15cdf8fc4862a937c083bd95612
+guid: 647ce253532974320b40cc53f053937d
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -7,33 +7,20 @@ ModelImporter:
     100002: Sten1
     100004: Sten2
     100006: Sten3
-    100008: Sten4
-    100010: Sten5
     400000: //RootNode
     400002: Sten1
     400004: Sten2
     400006: Sten3
-    400008: Sten4
-    400010: Sten5
     2100000: sten
     2300000: Sten1
     2300002: Sten2
     2300004: Sten3
-    2300006: Sten4
-    2300008: Sten5
     3300000: Sten1
     3300002: Sten2
     3300004: Sten3
-    3300006: Sten4
-    3300008: Sten5
     4300000: Sten1
     4300002: Sten2
     4300004: Sten3
-    4300006: Sten4
-    4300008: Sten5
-    7400000: Default Take
-    9500000: //RootNode
-    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -86,7 +73,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -110,7 +97,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

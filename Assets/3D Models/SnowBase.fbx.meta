@@ -1,30 +1,64 @@
 fileFormatVersion: 2
-guid: 6f7175412eb1548449f55dbfb3b34056
+guid: fa1641eaec6224be5830c4ad056ae5b2
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Cube
-    100002: Cube_001
-    100004: Cube_002
-    100006: //RootNode
-    400000: Cube
-    400002: Cube_001
-    400004: Cube_002
-    400006: //RootNode
-    2100000: unnamed
-    2300000: Cube
-    2300002: Cube_001
-    2300004: Cube_002
-    3300000: Cube
-    3300002: Cube_001
-    3300004: Cube_002
-    4300000: Cube
-    4300002: Cube_001
-    4300004: Cube_002
-    7400000: Default Take
-    9500000: //RootNode
+    100000: Crystal-Pyramid-03-Small
+    100002: Cube.005
+    100004: Empty
+    100006: Plane
+    100008: //RootNode
+    100010: Stairs
+    400000: Crystal-Pyramid-03-Small
+    400002: Cube.005
+    400004: Empty
+    400006: Plane
+    400008: //RootNode
+    400010: Stairs
+    2100000: Stone
+    2100002: EmissionBlue
+    2100004: Ice
+    2100006: Snow
+    2100008: Crystal
+    2300000: Crystal-Pyramid-03-Small
+    2300002: Cube.005
+    2300004: Plane
+    2300006: Stairs
+    3300000: Crystal-Pyramid-03-Small
+    3300002: Cube.005
+    3300004: Plane
+    3300006: Stairs
+    4300000: Stairs
+    4300002: Cube.005
+    4300004: Plane
+    4300006: Crystal-Pyramid-03-Small
     2186277476908879412: ImportLogs
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Crystal
+    second: {fileID: 2100000, guid: 50749232742eb4979afc152677fff3ca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EmissionBlue
+    second: {fileID: 2100000, guid: e1bdac5422f8042b6951cb3df0605ce5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ice
+    second: {fileID: 2100000, guid: ca75651c01e5b4ac0aaacaf607cccfc9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Snow
+    second: {fileID: 2100000, guid: d2c3600f07a1b42d19d57dbfe533dfe5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stone
+    second: {fileID: 2100000, guid: cffcf155993cb4504b24153320f88da3, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -76,7 +110,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -100,7 +134,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

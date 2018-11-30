@@ -14,7 +14,7 @@ public class MatchManager : MonoBehaviour {
     public GameObject resetText;
     public UnityEngine.UI.Text p1ScoreText;
     public UnityEngine.UI.Text p2ScoreText;
-    public UnityEngine.UI.Text pScoreText;
+    public UnityEngine.UI.Text p3ScoreText;
 
     float p1score = 0, p2score = 0, p3score = 0;
 
@@ -41,7 +41,7 @@ public class MatchManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         zoneCount = zones.Count;
-
+        
         if (Input.GetKeyDown("r"))
             {
             SceneManager.LoadScene(sceneIndex);
@@ -69,13 +69,16 @@ public class MatchManager : MonoBehaviour {
                 Debug.Log("No winner, " + coveredArea + "/" + areaThreshold);
                 coveredArea = 0;
                 }
-
+            Score();
             yield return new WaitForSeconds(1f);
             }
         }
 
     public void Score()
         {
+        p1score = 0f;
+        p2score = 0f;
+        p3score = 0f;
         foreach (GameObject zone in zones)
             {
             if (zone != null)
@@ -95,7 +98,9 @@ public class MatchManager : MonoBehaviour {
                     }
                 }
             }
-        //p1ScoreText.text = (p1score /  ToString + " %"
+        p1ScoreText.text = Mathf.Round((p1score / areaThreshold) * 100).ToString() + " %";
+        p2ScoreText.text = Mathf.Round((p2score / areaThreshold) * 100).ToString() + " %";
+        p3ScoreText.text = Mathf.Round((p3score / areaThreshold) * 100).ToString() + " %";
         }
 
     public string Winner()
