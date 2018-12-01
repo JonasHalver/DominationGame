@@ -810,6 +810,7 @@ MonoBehaviour:
   p2Mat: {fileID: 2100000, guid: 90c30e557f4182e4199ddc1d42061140, type: 2}
   p3Mat: {fileID: 2100000, guid: f80f438ce91b33249aa3e4769f5b34f1, type: 2}
   node: {fileID: 1753564287911790, guid: 88fadcd38d247e14483bb52752d636b2, type: 2}
+  cooldown: 1
   speed: 0
   movementSpeed: 8
   zoneSpeed: 12
@@ -1179,6 +1180,7 @@ MonoBehaviour:
   p2Mat: {fileID: 2100000, guid: 90c30e557f4182e4199ddc1d42061140, type: 2}
   p3Mat: {fileID: 2100000, guid: f80f438ce91b33249aa3e4769f5b34f1, type: 2}
   node: {fileID: 1753564287911790, guid: 88fadcd38d247e14483bb52752d636b2, type: 2}
+  cooldown: 1
   speed: 0
   movementSpeed: 8
   zoneSpeed: 12
@@ -1451,6 +1453,7 @@ MonoBehaviour:
   p2Mat: {fileID: 2100000, guid: 90c30e557f4182e4199ddc1d42061140, type: 2}
   p3Mat: {fileID: 2100000, guid: f80f438ce91b33249aa3e4769f5b34f1, type: 2}
   node: {fileID: 1753564287911790, guid: 88fadcd38d247e14483bb52752d636b2, type: 2}
+  cooldown: 1
   speed: 0
   movementSpeed: 8
   zoneSpeed: 12

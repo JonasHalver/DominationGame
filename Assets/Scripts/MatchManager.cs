@@ -15,6 +15,7 @@ public class MatchManager : MonoBehaviour {
     public UnityEngine.UI.Text p1ScoreText;
     public UnityEngine.UI.Text p2ScoreText;
     public UnityEngine.UI.Text p3ScoreText;
+    public UnityEngine.UI.Text objective;
 
     float p1score = 0, p2score = 0, p3score = 0;
 
@@ -36,6 +37,7 @@ public class MatchManager : MonoBehaviour {
         arena = GameObject.Find("Arena");
         arenaArea = Mathf.Pow((arena.transform.localScale.x * 10), 2);
         areaThreshold = arenaArea * areaPercentage;
+        objective.text = "First to " + (areaPercentage * 100).ToString() + "% wins!";
 	}
 	
 	// Update is called once per frame
@@ -98,9 +100,9 @@ public class MatchManager : MonoBehaviour {
                     }
                 }
             }
-        p1ScoreText.text = Mathf.Round((p1score / areaThreshold) * 100).ToString() + " %";
-        p2ScoreText.text = Mathf.Round((p2score / areaThreshold) * 100).ToString() + " %";
-        p3ScoreText.text = Mathf.Round((p3score / areaThreshold) * 100).ToString() + " %";
+        p1ScoreText.text = Mathf.Round((p1score / arenaArea) * 100).ToString() + " %";
+        p2ScoreText.text = Mathf.Round((p2score / arenaArea) * 100).ToString() + " %";
+        p3ScoreText.text = Mathf.Round((p3score / arenaArea) * 100).ToString() + " %";
         }
 
     public string Winner()

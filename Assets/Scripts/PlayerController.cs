@@ -89,6 +89,7 @@ public class PlayerController : MonoBehaviour {
                 nodeCurrent.GetComponent<NodeScript>().owner = gameObject.name;
                 nodeCurrent.GetComponent<Renderer>().material = thisMat;
                 nodeCurrent.transform.GetChild(0).GetComponent<Renderer>().material = thisMat;
+                nodeCurrent.transform.GetChild(1).GetComponent<Renderer>().material = thisMat;
                 StartCoroutine(Cooldown());
                 }
             }

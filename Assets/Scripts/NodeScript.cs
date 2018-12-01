@@ -6,7 +6,12 @@ public class NodeScript : MonoBehaviour {
 
     private SphereCollider zoneCol;
     private GameObject zone;
+    private GameObject terrain;
     public string owner;
+
+    public float timeToMaxSize = 10f;
+    public float zoneMaxSize = 20f;
+    public float terrainHeighChange = 5f;
 
     public Color p1Color, p2Color, p3Color;
 
@@ -15,6 +20,7 @@ public class NodeScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         zone = transform.GetChild(0).gameObject;
+        terrain = transform.GetChild(1).gameObject;
         zoneCol = zone.GetComponent<SphereCollider>();
 
         grow = Grow();
@@ -28,10 +34,14 @@ public class NodeScript : MonoBehaviour {
 
     IEnumerator Grow()
         {
-        for (float f = 1f; f < 20f; f = f + 0.1f)
+        for (float f = 2.5f; f < zoneMaxSize; f = f + ((zoneMaxSize / timeToMaxSize)/10))
             {
             //zoneCol.radius = f;
             zone.transform.localScale = new Vector3(f, f, f);
+
+            Vector3 ttp = terrain.transform.position;
+            terrain.transform.position = new Vector3(ttp.x, ttp.y + ((terrainHeighChange / timeToMaxSize)/zoneMaxSize), ttp.z);
+
             yield return new WaitForSeconds(0.1f);
             }
         }
@@ -43,7 +53,7 @@ public class NodeScript : MonoBehaviour {
 
     private void OnTriggerStay(Collider other)
         {
-        if (other.gameObject != zone && other.gameObject.name == "Zone")
+        if (other.gameObject != zone && other.gameObject.name == "Zone" && other.GetComponent<ZoneScript>().area > zone.GetComponent<ZoneScript>().area)
             {
             Debug.Log("In Zone");
             Destroy(gameObject);
