@@ -281,6 +281,16 @@ MonoBehaviour:
   p1Color: {r: 0, g: 0, b: 0, a: 0}
   p2Color: {r: 0, g: 0, b: 0, a: 0}
   p3Color: {r: 0, g: 0, b: 0, a: 0}
+  environmentAsset1: {fileID: 1246273181407024, guid: dbfc766f916e6ac41bd0aab587260d3d,
+    type: 2}
+  environmentAsset2: {fileID: 1246273181407024, guid: dbfc766f916e6ac41bd0aab587260d3d,
+    type: 2}
+  environmentAsset3: {fileID: 1843170066448010, guid: f943bd1088631eb4387a2322c584a8b1,
+    type: 2}
+  assetYOffset: -5
+  maxObjects: 5
+  delayMin: 2
+  delayMax: 5
 --- !u!135 &135203051788747474
 SphereCollider:
   m_ObjectHideFlags: 1
