@@ -1,20 +1,32 @@
 fileFormatVersion: 2
-guid: ec884c2f003904be18b2ec56447c98c3
+guid: da594bc102e994cc3b0157dde4613422
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: No Name
+    2100000: Tree
+    2100002: Nails
+    2100004: Flag
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Sphere.005
+    4300000: Cylinder
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: No Name
-    second: {fileID: 2100000, guid: 007c245f1d18546bf93aae78e11d5702, type: 2}
+      name: Flag
+    second: {fileID: 2100000, guid: eff83b637077f45d18e8a2ae8262609a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Nails
+    second: {fileID: 2100000, guid: 8b77eb0065c564fefb51992622d12291, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tree
+    second: {fileID: 2100000, guid: c5a83259af1034d86803737ebee4afbf, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
