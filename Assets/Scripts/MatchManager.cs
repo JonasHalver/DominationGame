@@ -85,7 +85,7 @@ public class MatchManager : MonoBehaviour {
             {
             if (zone != null)
                 {
-                string zoneOwner = zone.transform.parent.GetComponent<NodeScript>().owner;
+                string zoneOwner = zone.transform.parent.parent.GetComponent<NodeScript>().owner;
                 switch (zoneOwner)
                     {
                     case "Player1":
