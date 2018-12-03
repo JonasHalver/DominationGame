@@ -314,9 +314,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1367991085023348}
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071067}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -1.45, z: -0}
-  m_LocalScale: {x: 0.02, y: 0.019999992, z: 0.019999992}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 4943128007567528}
   m_RootOrder: 1
@@ -967,7 +967,7 @@ MeshFilter:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1367991085023348}
-  m_Mesh: {fileID: 4300000, guid: 3334af1f03dc3604182930587732e4f9, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 79e4504a746305a4dbc3d46b73a87d10, type: 3}
 --- !u!33 &33642504760198900
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -1094,8 +1094,7 @@ MonoBehaviour:
   delayMax: 5
   assetYOffset: -1
   objectFinalPos: 1
-  environmentAsset1: {fileID: 1585975767968870, guid: 3ce7e0d902fbd431faeefb75e175aa23,
-    type: 2}
+  environmentAsset1: {fileID: 100000, guid: 89a1c2e26d5e04a9fa8128e2634dde5d, type: 3}
   environmentAsset2: {fileID: 1941864859166118, guid: c0d63fa065fd3497d9e2419152c8cfa6,
     type: 2}
   environmentAsset3: {fileID: 1585975767968870, guid: 3ce7e0d902fbd431faeefb75e175aa23,
