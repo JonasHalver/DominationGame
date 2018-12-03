@@ -30,9 +30,9 @@ public class NodeScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-        space = transform.Find("SpaceFlag").gameObject;
-        virus = transform.Find("VirusFlag").gameObject;
-        snow = transform.Find("SnowFlag").gameObject;
+        //space = transform.Find("SpaceFlag").gameObject;
+        //virus = transform.Find("VirusFlag").gameObject;
+        //snow = transform.Find("SnowFlag").gameObject;
 
         switch (owner)
             {

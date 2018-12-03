@@ -262,7 +262,7 @@ Transform:
   m_GameObject: {fileID: 1135363996276070}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.188, z: 0}
-  m_LocalScale: {x: 0.44386, y: 0.44386, z: 0.44386}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4409723614356608}
   - {fileID: 4738027723091738}
@@ -291,9 +291,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1170480729844296}
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0, y: 0, z: -0.062866665}
-  m_LocalScale: {x: 0.06666667, y: 0.066666655, z: 0.066666655}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -1.46, z: -0.062866665}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 4325773050936672}
   m_RootOrder: 1
@@ -304,9 +304,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1188252373497788}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.766, z: 0}
-  m_LocalScale: {x: 30, y: 30, z: 30}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4982423435343004}
   - {fileID: 4270993969320978}
@@ -320,8 +320,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1628369173779830}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.5454545, z: 0}
-  m_LocalScale: {x: 4.545454, y: 4.545454, z: 4.545454}
+  m_LocalPosition: {x: 0, y: -1.46, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 4943128007567528}
   m_RootOrder: 1
@@ -334,7 +334,7 @@ Transform:
   m_GameObject: {fileID: 1563782966978074}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5.6818175, y: 5.6818175, z: 5.6818175}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4943128007567528}
   m_RootOrder: 0
@@ -347,7 +347,7 @@ Transform:
   m_GameObject: {fileID: 1372290860436936}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -0.42355695, z: 0}
-  m_LocalScale: {x: 5.632406, y: 5.632406, z: 5.632406}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4061769855640428}
   m_RootOrder: 0
@@ -388,8 +388,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1287572501378124}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.946875, z: 0}
-  m_LocalScale: {x: 4.505925, y: 4.505925, z: 4.505925}
+  m_LocalPosition: {x: 0, y: -1.46, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 4061769855640428}
   m_RootOrder: 1
@@ -402,7 +402,7 @@ Transform:
   m_GameObject: {fileID: 1547211979260180}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.44, y: 0.44, z: 0.44}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4364353359036026}
   - {fileID: 4347860951913520}
@@ -415,9 +415,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1081160946660002}
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071067}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.025533332}
-  m_LocalScale: {x: 0.083333336, y: 0.08333332, z: 0.08333332}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4325773050936672}
   m_RootOrder: 0
@@ -931,7 +931,7 @@ MeshFilter:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1188252373497788}
-  m_Mesh: {fileID: 4300000, guid: ec884c2f003904be18b2ec56447c98c3, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 89a1c2e26d5e04a9fa8128e2634dde5d, type: 3}
 --- !u!54 &54064787067978690
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -1033,7 +1033,7 @@ MonoBehaviour:
   snow: {fileID: 1188252373497788}
   timeToMaxSize: 10
   zoneMaxSize: 20
-  terrainHeighChange: 1
+  terrainHeighChange: 1.5
   p1Color: {r: 0, g: 0, b: 0, a: 0}
   p2Color: {r: 0, g: 0, b: 0, a: 0}
   p3Color: {r: 0, g: 0, b: 0, a: 0}
