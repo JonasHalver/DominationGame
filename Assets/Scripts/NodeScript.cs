@@ -12,16 +12,16 @@ public class NodeScript : MonoBehaviour {
 
     public float timeToMaxSize = 10f;
     public float zoneMaxSize = 20f;
-    public float terrainHeighChange = 5f;
+    public float terrainHeightChange = 5f;
 
     public Color p1Color, p2Color, p3Color;
 
-    public GameObject environmentAsset1, environmentAsset2, environmentAsset3;
-    private List<GameObject> assets = new List<GameObject>();
-    private GameObject currentObject;
-    public float assetYOffset = -1f;
-    public float maxObjects = 5;
-    public float delayMin = 2f, delayMax = 5f;
+    //public GameObject environmentAsset1, environmentAsset2, environmentAsset3;
+    //private List<GameObject> assets = new List<GameObject>();
+    //private GameObject currentObject;
+    //public float assetYOffset = -1f;
+    //public float maxObjects = 5;
+    //public float delayMin = 2f, delayMax = 5f;
     //private float placedObjects; 
 
     private IEnumerator grow;
@@ -80,7 +80,7 @@ public class NodeScript : MonoBehaviour {
             zone.transform.localScale = new Vector3(f, f, f);
 
             Vector3 ttp = transform.position;
-            transform.position = new Vector3(ttp.x, ttp.y + ((terrainHeighChange / timeToMaxSize)/zoneMaxSize), ttp.z);
+            transform.position = new Vector3(ttp.x, ttp.y + ((terrainHeightChange / timeToMaxSize)/zoneMaxSize), ttp.z);
 
             yield return new WaitForSeconds(0.1f);
             }

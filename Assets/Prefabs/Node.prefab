@@ -39,6 +39,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4061769855640428}
+  - component: {fileID: 114263749625377694}
   m_Layer: 0
   m_Name: SpaceFlag
   m_TagString: Untagged
@@ -54,6 +55,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4325773050936672}
+  - component: {fileID: 114514998406758822}
   - component: {fileID: 33957362156017662}
   - component: {fileID: 23090753627003538}
   m_Layer: 0
@@ -193,6 +195,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4943128007567528}
+  - component: {fileID: 114562870774243952}
   - component: {fileID: 33112251667786066}
   - component: {fileID: 23815812098231874}
   m_Layer: 0
@@ -472,7 +475,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100002, guid: f45571c2f94c240e2b60cb9a59e8c7c9, type: 3}
+  - {fileID: 2100000, guid: 124d838491e0f47c5a47c5ff3f548037, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -825,8 +828,8 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 79e4504a746305a4dbc3d46b73a87d10, type: 3}
-  - {fileID: 2100002, guid: 79e4504a746305a4dbc3d46b73a87d10, type: 3}
+  - {fileID: 2100000, guid: fc71edbd5a4b24fe7b832c22f2bd69cb, type: 2}
+  - {fileID: 2100000, guid: fc71edbd5a4b24fe7b832c22f2bd69cb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -975,6 +978,69 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &114263749625377694
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1135363996276070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c5da943cc4b3984fb10702c8a531598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxObjects: 5
+  delayMin: 2
+  delayMax: 5
+  assetYOffset: -1
+  environmentAsset1: {fileID: 1669559810884694, guid: 5113ff105a461474d9259cbfaaa4e363,
+    type: 2}
+  environmentAsset2: {fileID: 1559550693337712, guid: 5865c03cb2db34342962833e9f58449a,
+    type: 2}
+  environmentAsset3: {fileID: 1707511326412084, guid: f72b6ee5f58664253a74985a16711859,
+    type: 2}
+--- !u!114 &114514998406758822
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1188252373497788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c5da943cc4b3984fb10702c8a531598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxObjects: 5
+  delayMin: 2
+  delayMax: 5
+  assetYOffset: -1
+  environmentAsset1: {fileID: 1585975767968870, guid: 3ce7e0d902fbd431faeefb75e175aa23,
+    type: 2}
+  environmentAsset2: {fileID: 1941864859166118, guid: c0d63fa065fd3497d9e2419152c8cfa6,
+    type: 2}
+  environmentAsset3: {fileID: 1585975767968870, guid: 3ce7e0d902fbd431faeefb75e175aa23,
+    type: 2}
+--- !u!114 &114562870774243952
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1547211979260180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c5da943cc4b3984fb10702c8a531598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxObjects: 5
+  delayMin: 2
+  delayMax: 5
+  assetYOffset: -1
+  environmentAsset1: {fileID: 1607074455241162, guid: 29ebdd77ec5732944ba01808978e120d,
+    type: 2}
+  environmentAsset2: {fileID: 1123163735970048, guid: d378e5c587333134094177ad20c6a9db,
+    type: 2}
+  environmentAsset3: {fileID: 1843170066448010, guid: f943bd1088631eb4387a2322c584a8b1,
+    type: 2}
 --- !u!114 &114694209671564834
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1031,20 +1097,10 @@ MonoBehaviour:
   snow: {fileID: 1188252373497788}
   timeToMaxSize: 10
   zoneMaxSize: 20
-  terrainHeighChange: 1.5
+  terrainHeightChange: 1.5
   p1Color: {r: 0, g: 0, b: 0, a: 0}
   p2Color: {r: 0, g: 0, b: 0, a: 0}
   p3Color: {r: 0, g: 0, b: 0, a: 0}
-  environmentAsset1: {fileID: 1246273181407024, guid: dbfc766f916e6ac41bd0aab587260d3d,
-    type: 2}
-  environmentAsset2: {fileID: 1246273181407024, guid: dbfc766f916e6ac41bd0aab587260d3d,
-    type: 2}
-  environmentAsset3: {fileID: 1843170066448010, guid: f943bd1088631eb4387a2322c584a8b1,
-    type: 2}
-  assetYOffset: -5
-  maxObjects: 5
-  delayMin: 2
-  delayMax: 5
 --- !u!135 &135227675344344456
 SphereCollider:
   m_ObjectHideFlags: 1
