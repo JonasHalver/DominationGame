@@ -87,9 +87,9 @@ public class PlayerController : MonoBehaviour {
                 GameObject nodeCurrent;
                 nodeCurrent = Instantiate(node, new Vector3(transform.position.x, 0, transform.position.z), transform.rotation);
                 nodeCurrent.GetComponent<NodeScript>().owner = gameObject.name;
-                nodeCurrent.GetComponent<Renderer>().material = thisMat;
-                nodeCurrent.transform.GetChild(0).GetComponent<Renderer>().material = thisMat;
-                nodeCurrent.transform.GetChild(1).GetComponent<Renderer>().material = thisMat;
+                //nodeCurrent.GetComponent<Renderer>().material = thisMat;
+                nodeCurrent.transform.Find("Terrain").GetComponent<Renderer>().material = thisMat;
+                //nodeCurrent.transform.GetChild(1).GetComponent<Renderer>().material = thisMat;
                 StartCoroutine(Cooldown());
                 }
             }
@@ -116,7 +116,7 @@ public class PlayerController : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
         {
-        if (other.gameObject.name == "Zone" && other.transform.parent.GetComponent<NodeScript>().owner == gameObject.name)
+        if (other.gameObject.name == "Zone" && other.transform.parent.parent.GetComponent<NodeScript>().owner == gameObject.name)
             {
             zones.Add(other);
             }

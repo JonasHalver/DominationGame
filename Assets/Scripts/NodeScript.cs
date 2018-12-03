@@ -8,6 +8,7 @@ public class NodeScript : MonoBehaviour {
     private GameObject zone;
     private GameObject terrain;
     public string owner;
+    public GameObject space, virus, snow;
 
     public float timeToMaxSize = 10f;
     public float zoneMaxSize = 20f;
@@ -28,22 +29,47 @@ public class NodeScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        zone = transform.GetChild(0).gameObject;
-        terrain = transform.GetChild(1).gameObject;
+
+        space = transform.Find("SpaceFlag").gameObject;
+        virus = transform.Find("VirusFlag").gameObject;
+        snow = transform.Find("SnowFlag").gameObject;
+
+        switch (owner)
+            {
+            case "Player3":
+                snow.SetActive(true);
+                zone = snow.transform.Find("Zone").gameObject;
+                terrain = snow.transform.Find("Terrain").gameObject;
+                break;
+            case "Player1":
+                virus.SetActive(true);
+                zone = virus.transform.Find("Zone").gameObject;
+                terrain = virus.transform.Find("Terrain").gameObject;
+                break;
+            case "Player2":
+                space.SetActive(true);
+                zone = space.transform.Find("Zone").gameObject;
+                terrain = space.transform.Find("Terrain").gameObject;
+                break;
+            }
+        //zone = transform.GetChild(0).gameObject;
+        //terrain = transform.GetChild(1).gameObject;
         zoneCol = zone.GetComponent<SphereCollider>();
 
         grow = Grow();
-        objects = Objects();
+        //objects = Objects();
         StartCoroutine(grow);
-        StartCoroutine(objects);
-        assets.Add(environmentAsset1);
-        assets.Add(environmentAsset2);
-        assets.Add(environmentAsset3);
+        //StartCoroutine(objects);
+        //assets.Add(environmentAsset1);
+        //assets.Add(environmentAsset2);
+        //assets.Add(environmentAsset3);
+
+        
         }
 	
 	// Update is called once per frame
 	void Update () {
-        currentObject.transform.position = new Vector3(currentObject.transform.position.x, Mathf.Lerp(currentObject.transform.position.y, 1, 10 * Time.deltaTime), currentObject.transform.position.z);
+        //currentObject.transform.position = new Vector3(currentObject.transform.position.x, Mathf.Lerp(currentObject.transform.position.y, 1, 10 * Time.deltaTime), currentObject.transform.position.z);
         }
 
     IEnumerator Grow()
@@ -53,8 +79,8 @@ public class NodeScript : MonoBehaviour {
             //zoneCol.radius = f;
             zone.transform.localScale = new Vector3(f, f, f);
 
-            Vector3 ttp = terrain.transform.position;
-            terrain.transform.position = new Vector3(ttp.x, ttp.y + ((terrainHeighChange / timeToMaxSize)/zoneMaxSize), ttp.z);
+            Vector3 ttp = transform.position;
+            transform.position = new Vector3(ttp.x, ttp.y + ((terrainHeighChange / timeToMaxSize)/zoneMaxSize), ttp.z);
 
             yield return new WaitForSeconds(0.1f);
             }
@@ -65,22 +91,22 @@ public class NodeScript : MonoBehaviour {
         StopCoroutine(grow);
         }
 
-    IEnumerator Objects()
-        {
-        for (float f = 0; f <= maxObjects; f++)
-            { 
-            yield return new WaitForSeconds(Random.Range(delayMin, delayMax));
-
-            float area = zone.transform.localScale.x - 1;
-            Vector3 spawnPos = new Vector3(Random.Range((area/4)*-1, area / 4), assetYOffset, Random.Range((area/4)*-1, area / 4));
-            currentObject = Instantiate(assets[Random.Range(0, 3)], transform, false);
-            currentObject.transform.localPosition = spawnPos;
-            //placedObjects++;
-            //currentObject.transform.position = new Vector3(currentObject.transform.position.x, Mathf.Lerp(currentObject.transform.position.y, 1, 10 * Time.deltaTime), currentObject.transform.position.z);
-            //yield return new WaitForSeconds(delayMin);
-            }
+    //IEnumerator Objects()
+    //    {
+    //    for (float f = 0; f <= maxObjects; f++)
+    //        { 
+    //        yield return new WaitForSeconds(Random.Range(delayMin, delayMax));
+    //
+    //        float area = zone.transform.localScale.x - 1;
+    //        Vector3 spawnPos = new Vector3(Random.Range((area/4)*-1, area / 4), assetYOffset, Random.Range((area/4)*-1, area / 4));
+    //        currentObject = Instantiate(assets[Random.Range(0, 3)], transform, false);
+    //        currentObject.transform.localPosition = spawnPos;
+    //        //placedObjects++;
+    //        //currentObject.transform.position = new Vector3(currentObject.transform.position.x, Mathf.Lerp(currentObject.transform.position.y, 1, 10 * Time.deltaTime), currentObject.transform.position.z);
+    //        //yield return new WaitForSeconds(delayMin);
+    //        }
             
-        }
+    //    }
 
     private void OnTriggerStay(Collider other)
         {

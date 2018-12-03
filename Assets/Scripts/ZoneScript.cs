@@ -9,7 +9,7 @@ public class ZoneScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        node = transform.parent.gameObject;
+        node = transform.parent.parent.gameObject;
         MatchManager.zones.Add(gameObject);
 	}
 	
