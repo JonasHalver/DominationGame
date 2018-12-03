@@ -65,6 +65,7 @@ ModelImporter:
     2100026: Rock.008
     2100028: Rock.009
     2100030: Floor
+    2100032: SiloTOP
     2300000: Bridge
     2300002: Cube
     2300004: Cylinder
@@ -132,7 +133,87 @@ ModelImporter:
     4300040: Stone 2.005
     4300042: Plane
     2186277476908879412: ImportLogs
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bridge
+    second: {fileID: 2100000, guid: 8f1ff4fde2ae64a12a05ca9f43126fe8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Building
+    second: {fileID: 2100000, guid: 4f690f284e9764e8690b0454766bbaa6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Building.002
+    second: {fileID: 2100000, guid: 569c001f9d88d4cdda9980de7dfc71c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Floor
+    second: {fileID: 2100000, guid: 1ed939b67a2c44dbba377d90a492ef7f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MagRock
+    second: {fileID: 2100000, guid: 6e9be1af6a32749f0bdad3cf7a402361, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 1c424034c156544c5a088520b35a420a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pipes
+    second: {fileID: 2100000, guid: 1fc7102a144a144fc80e394aa3df09e0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Quartz
+    second: {fileID: 2100000, guid: 65dac5e65c1e54d02aa8c48197e6c9ce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rock
+    second: {fileID: 2100000, guid: 32fc42e04c9ed4db2a8a6c11089bd935, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rock.001
+    second: {fileID: 2100000, guid: 03867425009be4b1fb07b5856883ae3b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rock.003
+    second: {fileID: 2100000, guid: 0a5e32b1da6954ab18a09f733763b9e0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rock.007
+    second: {fileID: 2100000, guid: c02d13070585c4bc385b8b93256e62c8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rock.008
+    second: {fileID: 2100000, guid: 1d5e24c5054174a82bf7353e8406b541, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rock.009
+    second: {fileID: 2100000, guid: 28b50a386dfb740a18970739bba92376, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Silo
+    second: {fileID: 2100000, guid: 23c9c81e9f4d549e7a86611ceabc8998, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stolper
+    second: {fileID: 2100000, guid: bebba2105275342ea8ea3ef938f1320b, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -171,7 +252,7 @@ ModelImporter:
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
