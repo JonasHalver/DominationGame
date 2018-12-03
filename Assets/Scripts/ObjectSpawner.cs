@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ObjectSpawner : MonoBehaviour {
 
-    public float maxObjects = 5f, delayMin = 2f, delayMax = 5f, assetYOffset = -1f;
+    public float maxObjects = 5f, delayMin = 2f, delayMax = 5f, assetYOffset = -1f, objectFinalPos = 1f;
     private GameObject currentObject, zone;
     public GameObject environmentAsset1, environmentAsset2, environmentAsset3;
     private List<GameObject> assets = new List<GameObject>();
@@ -24,7 +24,7 @@ public class ObjectSpawner : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        currentObject.transform.position = new Vector3(currentObject.transform.position.x, Mathf.Lerp(currentObject.transform.position.y, 1, 10 * Time.deltaTime), currentObject.transform.position.z);
+        currentObject.transform.position = new Vector3(currentObject.transform.position.x, Mathf.Lerp(currentObject.transform.position.y, objectFinalPos, 10 * Time.deltaTime), currentObject.transform.position.z);
         }
 
     IEnumerator Objects()
