@@ -10,7 +10,12 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: Circle
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BowRockPlane
+    second: {fileID: 2100000, guid: 124d838491e0f47c5a47c5ff3f548037, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
