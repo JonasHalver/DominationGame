@@ -1650,7 +1650,7 @@ Light:
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0.8
-  m_Range: 45.73
+  m_Range: 16.056957
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -2814,27 +2814,6 @@ Prefab:
     - target: {fileID: 1636423957004370, guid: 7863aacaa9fba6941a8f4047880b377d, type: 2}
       propertyPath: m_Name
       value: Jellyfish particle system (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4866078150078942, guid: 7863aacaa9fba6941a8f4047880b377d, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.68185
-      objectReference: {fileID: 0}
-    - target: {fileID: 4866078150078942, guid: 7863aacaa9fba6941a8f4047880b377d, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.68185
-      objectReference: {fileID: 0}
-    - target: {fileID: 4866078150078942, guid: 7863aacaa9fba6941a8f4047880b377d, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 0.68185
-      objectReference: {fileID: 0}
-    - target: {fileID: 198965732464230116, guid: 7863aacaa9fba6941a8f4047880b377d,
-        type: 2}
-      propertyPath: prewarm
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1636423957004370, guid: 7863aacaa9fba6941a8f4047880b377d, type: 2}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7863aacaa9fba6941a8f4047880b377d, type: 2}
@@ -7841,7 +7820,7 @@ Light:
   serializedVersion: 8
   m_Type: 1
   m_Color: {r: 0.8392157, g: 0.9268443, b: 1, a: 1}
-  m_Intensity: 1.2
+  m_Intensity: 0.7
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -7860,7 +7839,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 2
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -16242,14 +16221,27 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 137424871767421040, guid: 58e3779a089d74cecb7c2c7233c5025b,
+    - target: {fileID: 4961630296172872, guid: 58e3779a089d74cecb7c2c7233c5025b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.00023
+      objectReference: {fileID: 0}
+    - target: {fileID: 4961630296172872, guid: 58e3779a089d74cecb7c2c7233c5025b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 108617332556002028, guid: 58e3779a089d74cecb7c2c7233c5025b,
         type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: d2a3db997e65a4d8abb90d5187491fad, type: 2}
-    - target: {fileID: 4760911243705950, guid: 58e3779a089d74cecb7c2c7233c5025b, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 39.788002
+      propertyPath: m_Shadows.m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4961630296172872, guid: 58e3779a089d74cecb7c2c7233c5025b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.00235
+      objectReference: {fileID: 0}
+    - target: {fileID: 108617332556002028, guid: 58e3779a089d74cecb7c2c7233c5025b,
+        type: 2}
+      propertyPath: m_Intensity
+      value: 2.84
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58e3779a089d74cecb7c2c7233c5025b, type: 2}
@@ -16317,7 +16309,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &1644322681
 Light:
   m_ObjectHideFlags: 0
@@ -16362,7 +16354,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1644322680}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -27.26, y: 2.26, z: 7.77}
+  m_LocalPosition: {x: -27.26, y: 2.26, z: 16.81}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
