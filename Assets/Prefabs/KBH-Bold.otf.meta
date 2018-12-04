@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: b2ea227325ce94a75b6d367a2803a5a9
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: KBH
+  fontNames:
+  - KBH
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 88f17a3d4d41543c4aaf5f170aa3465f, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
